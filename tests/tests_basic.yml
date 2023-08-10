@@ -2,6 +2,8 @@
 ---
 - name: Ensure that the role runs with default parameters
   hosts: all
+  tags:
+    - tests::uses_selinux
   vars_files:
     - vars/test_vars.yml
   vars:

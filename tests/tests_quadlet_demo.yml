@@ -2,6 +2,8 @@
 ---
 - name: Deploy the quadlet demo app
   hosts: all
+  tags:
+    - tests::container_no_image
   vars_files:
     - vars/test_vars.yml
   vars:
